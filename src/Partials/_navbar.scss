@@ -1,18 +1,47 @@
 nav {
-   position: fixed;
-   @include Font(13px, 600); 
-}
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid map-get($colorPalette, border);
 
-
-.logo > img {
-    height: 80px;
-    margin: 5px;
-}
-
-.li > a {
-    color: black;
-}
-
-a:visited, a:link, a:hover{
-    color: map-get($palette, link);
+   & .logo {
+       height: 50%;
+       display: flex;
+       align-items: center;
+       padding: 30px 0px 0px 10px;
+   }
+   
+   & .logo > img {
+       height: 50px;
+       margin: 5px;
+    };
+    
+    & .logo > h3 {
+        @include Font(22px, 600);
+        color: map-get($colorPalette, text);
+    }
+    
+    & .navbar {
+        @include Font(13px, 500);
+        height: 50%; 
+        & ul {
+            display: flex;
+            justify-content: space-between;
+            width: 33%;
+            list-style: none;
+            padding: 20px 0px 10px 0px;
+        };
+        & li > a {
+            @for $i from 1 to 4 {
+                @include Font(15px, 600);
+                color: map-get($colorPalette, text);
+                text-decoration: none;
+                margin-left: 15px;
+            }  
+        };
+        & .faq > a, link:active {
+            color: map-get($colorPalette, link);
+            border-bottom: 3px solid map-get($colorPalette, link);
+            padding-bottom: 10px;
+        }
+    };
 }
