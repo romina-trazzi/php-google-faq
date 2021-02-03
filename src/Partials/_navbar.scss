@@ -1,0 +1,18 @@
+nav {
+   position: fixed;
+   @include Font(13px, 600); 
+}
+
+
+.logo > img {
+    height: 80px;
+    margin: 5px;
+}
+
+.li > a {
+    color: black;
+}
+
+a:visited, a:link, a:hover{
+    color: map-get($palette, link);
+}
