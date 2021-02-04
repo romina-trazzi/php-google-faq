@@ -1,6 +1,6 @@
 <?php
 
-$title = [
+$titles = [
     "title_1" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
     "title_2" => "Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?",
     "title_3" => "Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?",
@@ -31,23 +31,49 @@ $title = [
     </head>
 
     <body>
+        <!-- Header -->
+        <header>
 
-        <!-- Navbar -->
-        <nav>
+            <!-- Logo Google -->
             <div class="logo">
                 <img src="dist/img/google-logo.jpg" alt="logo di Google">
                 <h3> Privacy e termini </h3>
             </div>
-            <div class="navbar">
+            <!-- / Logo Google -->
+
+            <!-- Navbar -->
+            <nav>
                 <ul>
                     <li><a href=#>Introduzione</a></li>
                     <li><a href=#>Norme sulla privacy</a></li>
                     <li><a href=#>Termini di servizio</a></li>
                     <li class="faq"><a href=#>Domande frequenti</a></li>
                 </ul>
-            </div>
-        </nav>
-        <!-- / Navbar -->
+            </nav>
+            <!-- / Navbar -->
+        
+        </header>
+        <!-- / Header -->
+
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Main -->
+            <main>
+                <div class="question">
+                    <?php      
+                        foreach ($titles as $title) {
+                            echo $title . "<br>";
+                        };
+                    ?>
+                </div>
+            </main>
+            <!-- / Main -->
+
+
+        </div>
+        <!-- / Container -->
+
 
 
 

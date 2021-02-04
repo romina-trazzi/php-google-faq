@@ -1,0 +1,8 @@
+
+.question {
+    height: 64px;
+    width: 978px;
+    @include Font (24px, 500);
+    color: map-get($colorPalette, question); 
+    margin-top: 150px; 
+}

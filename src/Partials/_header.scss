@@ -1,6 +1,8 @@
-nav {
+header {
     position: fixed;
     top: 0;
+    z-index: 9999;
+    overflow: hidden;
     border-bottom: 1px solid map-get($colorPalette, border);
 
    & .logo {
@@ -20,7 +22,7 @@ nav {
         color: map-get($colorPalette, text);
     }
     
-    & .navbar {
+    & nav {
         @include Font(13px, 500);
         height: 50%; 
         & ul {
