@@ -88,7 +88,7 @@ $faqs = [
                 <div>
                     <?php      
                         foreach ($faqs as $key => $item) { 
-                            echo "<div class = 'question'>" . $item["question"] . "</div>";
+                            echo "<div class = 'title'>" . $item["question"] . "</div>";
                             echo "<p class = 'paragraph'>" . $item["answer"] . "</p>"; 
                         }
                     ?>
