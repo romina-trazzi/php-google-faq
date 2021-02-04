@@ -102,42 +102,41 @@ $faqs = [
 
                 <div class="policies">
 
-                        <div class="footer_align">
-                            <!-- Footer sx -->
-                            <div class="policies_left">
-                                <ul>
-                                    <li><a href="#">Google</a></li>
-                                    <li><a href="#">Tutto su Google</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Termini</a></li>
-                                </ul>
-                            </div>
-                            <!-- / Footer sx -->
-                            
-                            <!-- Footer dx -->
-                            <div class="policies_right">
-                                <i class="fas fa-globe-europe"></i>
-                                <select name= "Lingue">
-                                    <option value="Dansk">Dansk</option>
-                                    <option value="Deutch">Deutch</option>
-                                    <option value="English">English</option>
-                                    <option value="Espagnol">Espagnol</option>
-                                    <option value="François">François</option>
-                                    <option value="Italiano" selected>Italiano</option>
-                                </select>
-                            </div>
-                            <!-- / Footer dx -->
-
+                    <div class="footer_align">
+                        <!-- Footer sx -->
+                        <div class="policies_left">
+                            <ul>
+                                <li><a href="#">Google</a></li>
+                                <li><a href="#">Tutto su Google</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Termini</a></li>
+                            </ul>
                         </div>
+                        <!-- / Footer sx -->
+                        
+                        <!-- Footer dx -->
+                        <div class="policies_right">
+                            <i class="fas fa-globe-europe"></i>
+                            <select name= "Lingue">
+                                <option value="Dansk">Dansk</option>
+                                <option value="Deutch">Deutch</option>
+                                <option value="English">English</option>
+                                <option value="Espagnol">Espagnol</option>
+                                <option value="François">François</option>
+                                <option value="Italiano" selected>Italiano</option>
+                            </select>
+                        </div>
+                        <!-- / Footer dx -->
 
-                
+                    </div>
+
                 </div>
             </footer>    
             <!-- / Footer -->
             
         
         
-            </div>
+        </div>
         <!-- / Container -->
 
     </body>

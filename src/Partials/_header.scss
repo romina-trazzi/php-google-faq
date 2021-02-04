@@ -5,6 +5,7 @@ header {
     width: 100%;
     overflow: hidden;
     border-bottom: 1px solid map-get($colorPalette, border);
+    background-color: white;
 
    & .logo {
        height: 50%;
