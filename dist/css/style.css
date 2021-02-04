@@ -131,15 +131,19 @@ footer .policies {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-footer .policies .policies_left {
-  width: 41%;
+footer .policies .footer_align {
+  display: flex;
+  justify-content: space-between;
+  width: 51%;
 }
 footer .policies .policies_left ul {
-  display: flex;
-  justify-content: space-evenly;
   list-style: none;
-  width: 25%;
+  display: flex;
+}
+footer .policies .policies_left ul li {
+  padding-right: 15px;
 }
 footer .policies .policies_left li > a {
   font-family: "Roboto", "Arial", sans-serif;

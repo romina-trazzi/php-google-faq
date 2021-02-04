@@ -8,22 +8,30 @@ footer {
         width: 100%;
         display: flex;
         justify-content:center;
+        align-items: center;
+    
+    & .footer_align {
+        display: flex;
+        justify-content: space-between;
+        width: 51%;
+    }
 
         & .policies_left {
-            width: 41%;
-            
             & ul {
-                display: flex;
-                justify-content: space-evenly;
                 list-style: none;
-                width: 25%;
-            };
+                display: flex;
 
+                & li {
+                    padding-right: 15px;
+                }
+            }
+            
             & li > a {
                 @for $i from 1 to 4 {
                     @include Font(11px, 300);
                     color: map-get($colorPalette, text);
                     text-decoration: none;
+                    
                 }  
             }
 
