@@ -1,16 +1,19 @@
 main {
-    margin-top: 150px;
-    
-    & .question {
-        height: 20px;
-        width: 978px;
-        @include Font (24px, 500);
-        color: map-get($colorPalette, question); 
-        margin-top: 64px;
+    margin-top: 100px;
+    & div {
+        & div.title {
+            width: 978px;
+            @include Font (24px, 500);
+            color: map-get($colorPalette, question); 
+            padding-top: 64px;
+        }
 
-        & .paragraph {
+        & p.paragraph {
+            width: 978px;
             @include Font (14px, 300);
             color: map-get($colorPalette, answer);
+            padding-top: 20px;
+            line-height: 1.5;
         }
     }
     

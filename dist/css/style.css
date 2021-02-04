@@ -93,20 +93,22 @@ header nav .faq > a, header nav link:active {
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 100px;
 }
-main .question {
-  height: 20px;
+main div div.title {
   width: 978px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: #3C4043;
-  margin-top: 64px;
+  padding-top: 64px;
 }
-main .question .paragraph {
+main div p.paragraph {
+  width: 978px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: black;
+  padding-top: 20px;
+  line-height: 1.5;
 }
