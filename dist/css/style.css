@@ -21,6 +21,8 @@ main {
 .container {
   width: 100vw;
   height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -93,11 +95,12 @@ header nav .faq > a, header nav link:active {
 
 main {
   margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 main div {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 main div div.title {
   width: 978px;
@@ -119,23 +122,24 @@ main div p.paragraph {
 }
 
 footer {
-  height: 100%;
   padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 footer .policies {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 footer .policies .policies_left {
-  width: 14%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 41%;
 }
 footer .policies .policies_left ul {
   display: flex;
+  justify-content: space-evenly;
   list-style: none;
+  width: 25%;
 }
 footer .policies .policies_left li > a {
   font-family: "Roboto", "Arial", sans-serif;
@@ -143,17 +147,17 @@ footer .policies .policies_left li > a {
   font-weight: 300;
   color: #5f6368;
   text-decoration: none;
-  margin-left: 15px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 11px;
   font-weight: 300;
   color: #5f6368;
   text-decoration: none;
-  margin-left: 15px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 11px;
   font-weight: 300;
   color: #5f6368;
   text-decoration: none;
-  margin-left: 15px;
+}
+footer .policies .policies_right select {
+  width: 170px;
 }

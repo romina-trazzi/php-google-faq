@@ -19,6 +19,8 @@ main {
 .container {
     width: 100vw;
     height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
 }
 
 footer {

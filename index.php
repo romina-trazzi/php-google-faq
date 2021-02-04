@@ -88,8 +88,9 @@ $faqs = [
                 <div>
                     <?php      
                         foreach ($faqs as $key => $item) {
+                            echo "<div>";
                             echo "<div class = 'title'>" . $item["question"] . "</div>";
-                            echo "<p class = 'paragraph'>" . $item["answer"] . "</p>"; 
+                            echo "<p class = 'paragraph'>" . $item["answer"] . "</p></div>"; 
                         }
                     ?>
                 </div>
@@ -115,19 +116,21 @@ $faqs = [
                     <!-- Footer dx -->
                     <div class="policies_right">
                         <i class="fas fa-globe-europe"></i>
-                        <select value="Italiano">
-                            <option value="">Dansk</option>
-                            <option value="">Deutch</option>
-                            <option value="">Italiano</option>
-                            <option value="">English</option>
-                            <option value="">Espagnol</option>
-                            <option value="">Francois</option>
+                        <select name= "Lingue">
+                            <option value="Dansk">Dansk</option>
+                            <option value="Deutch">Deutch</option>
+                            <option value="English">English</option>
+                            <option value="Espagnol">Espagnol</option>
+                            <option value="François">François</option>
+                            <option value="Italiano" selected>Italiano</option>
                         </select>
                     </div>
                     <!-- / Footer dx -->
                 
                 </div>
-                <!-- / Footer -->
+            </footer>    
+            <!-- / Footer -->
+            
         
         
             </div>
