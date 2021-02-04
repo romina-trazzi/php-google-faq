@@ -1,7 +1,8 @@
 header {
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 500;
+    width: 100%;
     overflow: hidden;
     border-bottom: 1px solid map-get($colorPalette, border);
 
@@ -42,8 +43,8 @@ header {
         };
         & .faq > a, link:active {
             color: map-get($colorPalette, link);
-            border-bottom: 3px solid map-get($colorPalette, link);
-            padding-bottom: 10px;
+            border-bottom: 5px solid map-get($colorPalette, link);
+            padding-bottom: 7px;
         }
     };
 }

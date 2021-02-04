@@ -1,8 +1,18 @@
+main {
+    margin-top: 150px;
+    
+    & .question {
+        height: 64px;
+        width: 978px;
+        @include Font (24px, 500);
+        color: map-get($colorPalette, question); 
+        position: absolute;
 
-.question {
-    height: 64px;
-    width: 978px;
-    @include Font (24px, 500);
-    color: map-get($colorPalette, question); 
-    margin-top: 150px; 
+        & .paragraph {
+            @include Font (14px, 300);
+            color: map-get($colorPalette, answer);
+        }
+    }
+    
+
 }
