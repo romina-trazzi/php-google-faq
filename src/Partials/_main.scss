@@ -2,11 +2,12 @@ main {
     margin-top: 150px;
     
     & .question {
-        height: 64px;
+        height: 20px;
         width: 978px;
         @include Font (24px, 500);
         color: map-get($colorPalette, question); 
         position: absolute;
+        padding-top: 64px;
 
         & .paragraph {
             @include Font (14px, 300);
