@@ -85,28 +85,17 @@ $faqs = [
         <!-- Container -->
         <div class="container">
             <main>
-                <div class="question">
+                <div>
                     <?php      
-                        foreach ($faqs as $faq) {
-                            foreach ($faq as $reply) {
-                                echo $reply . "<div class='question'><br><p class ='paragraph'>";
-                            }
-                        };  
-                    ?> 
+                        foreach ($faqs as $key => $item) { 
+                            echo "<div class = 'question'>" . $item["question"] . "</div>";
+                            echo "<p class = 'paragraph'>" . $item["answer"] . "</p>"; 
+                        }
+                    ?>
                 </div>
-
-
-
             </main>
         </div>
         <!-- / Container -->
-
-      
-
-      
-
-
-
 
     </body>
 
