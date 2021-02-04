@@ -87,14 +87,50 @@ $faqs = [
             <main>
                 <div>
                     <?php      
-                        foreach ($faqs as $key => $item) { 
+                        foreach ($faqs as $key => $item) {
                             echo "<div class = 'title'>" . $item["question"] . "</div>";
                             echo "<p class = 'paragraph'>" . $item["answer"] . "</p>"; 
                         }
                     ?>
                 </div>
             </main>
-        </div>
+            <!-- / Main -->
+            
+            <!-- Footer -->
+            <footer>
+
+                <div class="policies">
+
+                    <!-- Footer sx -->
+                    <div class="policies_left">
+                        <ul>
+                            <li><a href="#">Google</a></li>
+                            <li><a href="#">Tutto su Google</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Termini</a></li>
+                        </ul>
+                    </div>
+                    <!-- / Footer sx -->
+                    
+                    <!-- Footer dx -->
+                    <div class="policies_right">
+                        <i class="fas fa-globe-europe"></i>
+                        <select value="Italiano">
+                            <option value="">Dansk</option>
+                            <option value="">Deutch</option>
+                            <option value="">Italiano</option>
+                            <option value="">English</option>
+                            <option value="">Espagnol</option>
+                            <option value="">Francois</option>
+                        </select>
+                    </div>
+                    <!-- / Footer dx -->
+                
+                </div>
+                <!-- / Footer -->
+        
+        
+            </div>
         <!-- / Container -->
 
     </body>

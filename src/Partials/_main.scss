@@ -1,6 +1,9 @@
 main {
     margin-top: 100px;
     & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         & div.title {
             width: 978px;
             @include Font (24px, 500);
@@ -13,9 +16,10 @@ main {
             @include Font (14px, 300);
             color: map-get($colorPalette, answer);
             padding-top: 20px;
-            line-height: 1.5;
+            line-height: 2;
+            letter-spacing: 0.2;
+
         }
     }
     
-
 }

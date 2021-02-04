@@ -8,18 +8,17 @@ body {
     background-color: white;
 }
 
-.container {
-    width: 1150px;
-    height: calc(100% - 100px);
-    margin: 0 auto;
-}
-
 header {
     @include SectionDimension(100%, 100px);
 }
 
 main {
-    @include SectionDimension(100%, 1830px);
+    @include SectionDimension(100%, auto);
+}
+
+.container {
+    width: 100vw;
+    height: calc(100% - 100px);
 }
 
 footer {
